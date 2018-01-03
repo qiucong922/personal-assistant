@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myProject-personal-assistant_main.iml" filepath="$PROJECT_DIR$/.idea/modules/myProject-personal-assistant_main.iml" group="personal-assistant" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myProject-personal-assistant_test.iml" filepath="$PROJECT_DIR$/.idea/modules/myProject-personal-assistant_test.iml" group="personal-assistant" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/personal-assistant.iml" filepath="$PROJECT_DIR$/.idea/modules/personal-assistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/personal-assistant_main.iml" filepath="$PROJECT_DIR$/.idea/modules/personal-assistant_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/personal-assistant_test.iml" filepath="$PROJECT_DIR$/.idea/modules/personal-assistant_test.iml" />
+    </modules>
+  </component>
+</project>

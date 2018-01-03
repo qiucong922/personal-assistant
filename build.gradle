@@ -1,0 +1,57 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.9.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.qiucong'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-aop')
+    compile('org.springframework.boot:spring-boot-starter-cache')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+    compile('org.springframework.boot:spring-boot-starter-data-solr')
+    compile('org.springframework.boot:spring-boot-starter-mail')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-web-services')
+    compile('org.apache.pdfbox:pdfbox:2.0.8')
+    compile('org.apache.pdfbox:pdfbox-tools:2.0.8')
+    compile('com.google.guava:guava:23.6-jre')
+    compile('com.ibm.icu:icu4j:60.2')
+    runtime('com.h2database:h2')
+    runtime('org.springframework.boot:spring-boot-devtools')
+    runtime('mysql:mysql-connector-java')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+    testCompile('org.springframework.security:spring-security-test')
+    //testCompile("org.assertj:assertj-core:3.5.2")
+    //testCompile("org.springframework.restdocs:spring-restdocs-mockmvc")
+    testCompile("com.jayway.restassured:rest-assured:2.9.0")
+    testCompile("com.jayway.restassured:spring-mock-mvc:2.9.0")
+   // testCompile("junit:junit:4.12")
+   // testCompile("cglib:cglib:2.2")
+   // testCompile("org.togglz:togglz-junit:2.4.1.Final")
+   // testCompile("org.apache.directory.studio:org.apache.commons.io:2.4")
+    testCompile('com.jayway.jsonpath:json-path:2.4.0')
+}
